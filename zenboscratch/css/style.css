@@ -210,18 +210,18 @@ p a:hover {
 	border-radius: 10px 0 0px 10px;  /*william add*/
 	width:122px;
 	/*background:url(../images/nav-icon.png) no-repeat 36px -271px #cba200;*/
-	background:url(../images/nav-icon.png) no-repeat 36px -271px #f2ca30;
+	background:url(../images/nav-icon.png) no-repeat 36px -271px #f3be07;
 }
 .sidebar ul li.about:hover a {
 	width:114px;
 	/*background:url(../images/nav-icon.png) no-repeat 33px -271px #cba200;*/
-	background:url(../images/nav-icon.png) no-repeat 33px -271px #f2ca30;
+	background:url(../images/nav-icon.png) no-repeat 33px -271px #f3be07;
 }
 .sidebar ul li.about a {
 	width:114px;
 	height:144px;
 	/*background:url(../images/nav-icon.png) no-repeat 33px -163px #cba200;*/
-	background:url(../images/nav-icon.png) no-repeat 33px -163px #f2ca30;
+	background:url(../images/nav-icon.png) no-repeat 33px -163px #f3be07;
 }
 .sidebar ul li.selected.projects a, .sidebar ul li.selected.projects:hover a {
 	border-radius: 10px 0 0px 10px;  /*william add*/
@@ -416,11 +416,12 @@ p a:hover {
 	color:#5c3820;
 	float:none;
 	/*font-size:13px;*/
-	font-size:17px;
+	font-size:px;
 	letter-spacing:.02em;
 	line-height:24px;
 	margin:26px 0 25px;
-	width:325px;
+	/*width:325px;*/
+	width:360px;
 }
 .body .content-home div ul li p a {
 	color:#5c3820;
@@ -725,7 +726,9 @@ p a:hover {
 	padding:0;
 }
 .body .content-project div ul li {
-	float:Ω;
+	/*alignment*/
+	float:left;
+	/*float:right;*/ /*test*/
 	margin:0 0 20px;
 	width:388px;
 }
@@ -733,12 +736,14 @@ p a:hover {
 	margin:0 20px 0 0;
 }
 .body .content-project div ul li span {
+	/*photo text color*/
 	background-color:#dd8514;
 	display:block;
 	height:35px;
 	width:368px;
 }
 .body .content-project div ul li span a {
+	/*photo text color and style*/
 	color:#FFF;
 	font-size:18px;
 	line-height:33px;
@@ -788,11 +793,14 @@ p a:hover {
 }
 
 .body .content-project div.figure img {
-	display:block;
+	
+	/*william modify for example page*/
+	/*display:block;*/
+	display:inline;
 }
 .body .content-project div.figure span {
 	background-color:#dd8514;
-	color:#fff;
+	color:#000000;
 	display:block;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:12px;
@@ -806,6 +814,7 @@ p a:hover {
 }
 
 .body .content-project div.figure div h3 {
+	/*example page title text*/
 	color:#7b8846;
 	font-size:21px;
 	font-weight:400;
@@ -1446,3 +1455,15 @@ p a:hover {
 .footer ul li a:hover {
 	text-decoration:underline;
 }
+
+
+
+
+/*----------add section ----------*/
+.body .content-project table { /*william test*/
+    /*width: 100%;*/
+	/*border-width:3px; border-style:solid;*/
+    /*border-collapse: collapse;*/
+}
+
+
