@@ -1,16 +1,31 @@
-*{margin:0;padding:0;}
+/*
+
+*{  
+	margin: 0;
+	padding:0;
+}
+
+*/
+/*
 body {
+  
   background: #111; 
   font-family: 'Open Sans', sans-serif;    
   color: #fff;   
-  overflow-x: hidden;    
+  overflow-x: hidden;
+  
+
+  color: #fff;
 }
 header{
   position: absolute;
   z-index: 9999;
-  width: 100%;    
-  background: rgba(0,0,0,.5);    
+  width: 80%;    
+  background: rgba(0,0,0,.5);  
+  
 }
+*/
+/*
 h1, h2, h3{   
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700; 
@@ -40,6 +55,7 @@ span.code{
 ol .gist{
     margin: 1em 0 2em 0;
 }
+
 a{ 
     color:#fff;
 }
@@ -80,3 +96,6 @@ footer span{
         width: 100%;
     }
 }
+
+*/
+

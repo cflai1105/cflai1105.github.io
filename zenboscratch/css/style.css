@@ -12,11 +12,7 @@ body {
 a {
 	outline:none;
 }
-a img {
-	border:0;
-	/*william disable block property*/
-	/*display:block;*/
-}
+
 p {
 	font-family:Arial, Helvetica, sans-serif;
 }
@@ -101,7 +97,7 @@ p a:hover {
 	width:51%;
 	z-index:-1;
 }
-/*
+
 #background-green2 {
 	background:url(../images/bg-green2-absolute.png);
 	height:100%;
@@ -112,7 +108,7 @@ p a:hover {
 	width:51%;
 	z-index:-1;
 }
-*/
+
 /*------------------------- Pages ------------------------*/
 .page {
 	width:960px;
@@ -238,6 +234,7 @@ p a:hover {
 	background:url(../images/nav-icon.png) no-repeat 33px -377px #c0ac66;
 }
 .sidebar ul li.selected.blog a, .sidebar ul li.selected.blog:hover a {
+	border-radius: 10px 0 0px 10px;  /*william add*/
 	width:122px;
 	background:url(../images/nav-icon.png) no-repeat 38px -675px #aec066;
 }
@@ -251,6 +248,7 @@ p a:hover {
 	background:url(../images/nav-icon.png) no-repeat 35px -576px #aec066;
 }
 .sidebar ul li.selected.contact a, .sidebar ul li.selected.contact:hover a {
+	border-radius: 10px 0 0px 10px;  /*william add*/
 	width:122px;
 	background:url(../images/nav-icon.png) no-repeat 37px -848px #528846;
 }
@@ -473,9 +471,7 @@ p a:hover {
 	line-height:36px;
 	margin:0 0 36px;
 	text-transform:uppercase;
-	
-	/*william add this line to modify font*/
-	font-weight:bold;
+	font-weight:bold; 	/*william add this line to modify font*/
 }
 .body .content-about div div {
 	/*william: content layout*/
@@ -629,9 +625,14 @@ p a:hover {
 
 
 
+
+
 .body .content-project div:first-child {
 	padding-bottom:0;
+	/*william disble padding since effect sildeshow*/
+	/*
 	padding-top:26px;
+	*/
 }
 .body .content-project div:first-child div.navigation {
 	float:right;
@@ -669,13 +670,43 @@ p a:hover {
 	text-decoration:underline!important;
 }
 .body .content-project div {
-	/*background*/
+
 	background-color:#FFF;
 	margin:0 5px 0 18px;
 	overflow:hidden;
-	padding:1px 0 21px 30px;
+	padding:1px 0 21px 30px;	
+
 }
+
+/*william create for example detail*/
+.body .content-project-detail div {
+
+	background-color:#FFF;
+	margin:0 5px 0 18px;
+	overflow:hidden;
+	padding:1px 15px 21px 1px;	
+	
+
+}
+
+
 .body .content-project div:first-child h3 {
+	color:#5c3820;
+	/*display:inline-block;*/
+	display:block;
+	/*float:left;*/
+	font-size:27px;
+	/*font-weight:400;
+	letter-spacing:.02em;
+	line-height:36px;
+	margin:0;*/
+	text-transform:uppercase;
+	
+	font-weight:bold; 	/*william add this line to modify font*/
+}
+
+/*william create for example detail*/
+.body .content-project-detail div:first-child h3 {
 	color:#5c3820;
 	display:inline-block;
 	float:left;
@@ -685,7 +716,27 @@ p a:hover {
 	line-height:36px;
 	margin:0;
 	text-transform:uppercase;
+	
+	padding: 10px 0px 0px 15px;
 }
+
+
+/*william add h4*/
+.body .content-project-detail div:first-child h4 {
+	color:#676767;
+	display:inline-block;
+	float:left;
+	font-size:22px;
+	font-weight:400;
+	letter-spacing:.02em;
+	line-height:36px;
+	margin:0;
+	/*text-transform:uppercase;*/
+	padding: 0px 0px 0px 50px;
+}
+
+
+/*
 .body .content-project div.navigation {
 	overflow:hidden;
 	padding-top:10px;
@@ -719,6 +770,7 @@ p a:hover {
 	line-height:24px;
 	text-decoration:none;
 }
+*/
 .body .content-project div ul {
 	list-style:none;
 	margin:0;
@@ -726,24 +778,29 @@ p a:hover {
 	padding:0;
 }
 .body .content-project div ul li {
-	/*alignment*/
+	/*example page alignment*/
 	float:left;
 	/*float:right;*/ /*test*/
 	margin:0 0 20px;
 	width:388px;
 }
+/*
 .body .content-project div ul li:first-child span {
 	margin:0 20px 0 0;
 }
+*/
 .body .content-project div ul li span {
-	/*photo text color*/
+	/*example caption text color*/
 	background-color:#dd8514;
 	display:block;
 	height:35px;
-	width:368px;
+	/*width:368px;*/
+	width:378px;
+	
+	border-radius: 15px;	/*William add*/
 }
 .body .content-project div ul li span a {
-	/*photo text color and style*/
+	/*example caption color and style*/
 	color:#FFF;
 	font-size:18px;
 	line-height:33px;
@@ -796,8 +853,10 @@ p a:hover {
 	
 	/*william modify for example page*/
 	/*display:block;*/
-	display:inline;
+	display:block;
+
 }
+
 .body .content-project div.figure span {
 	background-color:#dd8514;
 	color:#000000;
@@ -821,6 +880,8 @@ p a:hover {
 	line-height:24px;
 	margin:0 0 14px;
 }
+
+
 .body .content-project div.figure div p {
 	color:#5c3820;
 	font-family:Arial, Helvetica, sans-serif;
@@ -829,13 +890,41 @@ p a:hover {
 	line-height:24px;
 	margin:0;
 }
+
+
+
+.body .content-project div ul li a img {
+	/*william add selector for example img*/
+	width:368px;
+	border-radius: 15px;	/*william add*/	
+	border: 1px solid #ccc; /*william add*/
+    padding: 5px;	/*william add*/
+}
+
+
+
 .body .content-blog div div {
 	background:none;
 	float:left;
 	margin:0;
 	padding:0 31px 0 0;
-	width:473px;
+	/*width:473px;*/
+	width:773px;
 }
+
+/*william modify content-blog h3 level*/
+.body .content-blog div:first-child h3 {
+	/*william: Getting Started Text*/
+	color:#5c3820;
+	font-size:27px;
+	font-weight:400;
+	letter-spacing:.02em;
+	line-height:36px;
+	margin:0 0 36px;
+	text-transform:uppercase;
+	font-weight:bold; 	/*william add this line to modify font*/
+}
+/*
 .body .content-blog div div h3 {
 	color:#5C3820;
 	font-size:27px;
@@ -845,6 +934,9 @@ p a:hover {
 	margin:0 0 57px;
 	text-transform:uppercase;
 }
+*/
+
+
 .body .content-blog div div ul {
 	list-style:none;
 	margin:0;
@@ -902,7 +994,7 @@ p a:hover {
 	text-transform:uppercase;
 }
 .body .content-blog div div div.paging {
-	margin:109px 0 34px;
+	margin:1109px 0 34px;
 	padding:0;
 }
 .body .content-blog div div div.paging ul {
@@ -931,6 +1023,7 @@ p a:hover {
 	width:23px;
 }
 .body .content-blog div div div.paging span {
+	background:url(../images/bg-2-column.png) repeat-y;	  /*william add blocks page background*/
 	color:#5C3820;
 	float:right;
 	font-family:Arial, Helvetica, sans-serif;
@@ -1214,14 +1307,14 @@ p a:hover {
 .body .content-home div p a:hover, .body .content-home div ul li a:hover, .body .content-about div div p a:hover, .body .content-about div div.sidebar div.section ul li a:hover, .body .content-about div div.sidebar div.section ul li span a:hover, .body .content-project div ul li span a:hover, .body .content-project div.figure div p a:hover, .body .content-blog div div ul li p a:hover, .body .content-blog div div ul li a:hover, .body .content-blog-single div div div.paging a:hover, .body .content-blog-single div div ul li h4 a:hover, .body .content-blog-single div div ul li p a:hover, .body .content-blog-single div div ul li div.section div a:hover, .body .content-contact div div p a:hover {
 	text-decoration:underline;
 }
-.body .content-home div.featured, .body .content-about div.featured {
+.body .content-home div.featured, .body .content-about div.featured,.body .content-project div.featured, .body .content-blog div.featured  {
 	background:url(../images/shadow.png) no-repeat left bottom;
 	margin:0;
 	padding:0 0 9px;
 	position:relative;
 	z-index:1000;
 }
-.body .content-home div.featured img, .body .content-about div.featured img {
+.body .content-home div.featured img, .body .content-about div.featured img, .body .content-project div.featured img, .body .content-blog div.featured img{
 	display:block;
 	margin:0 0 0 13px;
 }
@@ -1460,10 +1553,83 @@ p a:hover {
 
 
 /*----------add section ----------*/
-.body .content-project table { /*william test*/
-    /*width: 100%;*/
+.body .content-project-detail table { /*william test*/
+    width: 100%;
 	/*border-width:3px; border-style:solid;*/
     /*border-collapse: collapse;*/
 }
+
+
+.body .content-project-detail table tr:nth-child(even){
+	/*example table even row cell*/
+	background-color: #f2f2f2;	
+}
+
+.body .content-project-detail table tr{
+	height: 45px;
+	color: black;  /*font color*/
+}
+
+
+.body .content-project-detail table th{
+	/*example table head*/
+	background-color: #e2e2e2;
+	color: #7f7f7f;    
+	border: 2px solid #fff;
+    border-radius: 15px 15px 15px 15px;
+
+	width:80px;
+}
+
+
+.body .content-project-detail .bss-slides figure img{
+  /*an added css for bss-slides*/
+  /*william add*/
+
+	border: 1px solid #ccc; /*william add*/
+    padding: 5px;	/*william add*/
+	border-color: #7f7f7f;
+	background-color: #7f7f7f;
+	border-radius: 20px;
+}
+
+
+
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 0px 0px 5px 15px;  /*add to arrage*/
+
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+
+.bss-slides figure{
+  /*william add, define width in each css*/
+  /*width: 100%;*/
+  width: 762px;
+}
+
 
 
