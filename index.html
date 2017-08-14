@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Zenbo Scratch</title>
+</head>
+
+
+
+<body>
+	
+	<script type="text/javascript">
+		
+	try {
+	  var switchPage = function (language) {
+		switch (language) {
+		  case 'zh-cn':
+			console.log('/zh-CN' + window.location.pathname);
+				alert("zh-cn");
+				//window.location.href = '/zh-CN' + window.location.pathname;
+				window.location.href = 'tw/index.html';
+			return true;
+			break;
+
+		  case 'zh':
+		  case 'zh-tw':
+			console.log('/zh-TW' + window.location.pathname);
+				alert("zh-tw");
+				//window.location.href = '/zh-TW' + window.location.pathname;
+				window.location.href = 'tw/index.html';
+			return true;
+			break;
+
+		  case 'en':
+		  case 'en-us':
+			console.log('/en-US' + window.location.pathname);
+				alert("en-us");
+				//window.location.href = '/en-US' + window.location.pathname;
+				window.location.href = 'en/index.html';
+			return true;
+			break;
+
+		  default:
+				console.log('default:');
+		}
+		console.log('error:');
+		return false;
+	  };
+
+	  // detect window.navigator.languages
+	  var found = false;
+	  if (typeof(window.navigator.languages) === 'object') {
+		for (var index in window.navigator.languages) {
+		  console.log(window.navigator.languages[index].toLowerCase());
+		  found = switchPage(window.navigator.languages[index].toLowerCase());
+		  if (found) break;
+		}
+	  }
+
+	  if (!found) {
+		var lang = window.navigator.userLanguage || window.navigator.language;
+		var relang = lang.toLowerCase();
+		found = switchPage(relang);
+	  }
+
+	  if (!found) {
+		  console.log('not found:');
+		  //window.location.href = '/en-US' + window.location.pathname;
+		  window.location.href = 'en/index.html';
+	  }
+	} catch (e) {
+		console.log('exception');
+	    //window.location.href = '/en-US' + window.location.pathname;
+		window.location.href = 'en/index.html';
+	}
+
+	</script>
+
+
+
+</body>
+</html>
