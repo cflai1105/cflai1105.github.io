@@ -4,13 +4,63 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Zenbo Scratch</title>
+
+	
+	
+	<style type="text/css"> 
+	/*------------------------- Fonts ------------------------*/
+	@font-face {
+		font-family: 'AbelRegular';
+		src: url('tw/fonts/abel-regular-webfont.eot');
+		src: url('tw/fonts/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),  url('tw/fonts/abel-regular-webfont.woff') format('woff'),  url('fonts/abel-regular-webfont.ttf') format('truetype'),  url('tw/fonts/abel-regular-webfont.svg#AbelRegular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}		
+		
+		
+	div.content-dispatcher div.featured img{ 
+		background-color:#FFFFFF; 
+		width: 50%;
+  		margin: 0 auto;
+		display: block;
+	} 
+		
+	div.content-dispatcher {
+		margin-top:60px;
+	}
+		
+
+	.footer div.footer-sub{
+		margin:0;
+		text-align: center;	
+	}
+	
+		
+	.footer div.footer-sub a{
+		margin:0;
+		text-align: center;	
+		font-family:'AbelRegular', "微軟正黑體";
+		font-size: 20px;
+		text-decoration:none;
+	}
+		
+		
+	.footer div.footer-sub a:hover {
+		text-decoration:underline;
+	}
+		
+		
+	</style> 
 </head>
 
 
 
+
+
 <body>
-	
-	<script type="text/javascript">
+
+
+<script type="text/javascript">
 		
 	try {
 	  var switchPage = function (language) {
@@ -26,7 +76,7 @@
 		  case 'zh':
 		  case 'zh-tw':
 			console.log('/zh-TW' + window.location.pathname);
-				alert("zh-tw");
+				//alert("zh-tw");
 				//window.location.href = '/zh-TW' + window.location.pathname;
 				window.location.href = 'tw/index.html';
 			return true;
@@ -75,7 +125,26 @@
 		window.location.href = 'blog/index.html';
 	}
 
-	</script>
+</script>
+
+
+
+
+	<div class="content-dispatcher">
+		<div class="featured">
+			<img src="tw/images/pix_dispatcher_title.jpg" alt=""> 
+		</div>
+	</div>
+
+
+	<div class="footer">
+	
+		<div class="footer-sub">
+
+				<a href="tw/index.html">中文版</a> | <a href="blog/index.html">ENGLISH</a>
+
+		</div>
+	</div>
 
 
 
