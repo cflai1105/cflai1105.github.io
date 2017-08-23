@@ -114,8 +114,8 @@ p a:hover {
 	overflow:hidden;
 	min-height:720px;
 }
-.page .bblloocckk-page {
-	background:url(../images/bg-bblloocckk.png) repeat-y right top;
+.page .block-page {
+	background:url(../images/bg-block.png) repeat-y right top;
 	overflow:hidden;
 	min-height:720px;
 }
@@ -207,16 +207,16 @@ p a:hover {
 	height:144px;
 	background:url(../images/nav-icon.png) no-repeat 33px -377px #c0ac66;
 }
-.sidebar ul li.selected.bblloocckk a, .sidebar ul li.selected.bblloocckk:hover a {
+.sidebar ul li.selected.block a, .sidebar ul li.selected.block:hover a {
 	border-radius: 10px 0 0px 10px;
 	width:122px;
 	background:url(../images/nav-icon.png) no-repeat 38px -675px #aec066;
 }
-.sidebar ul li.bblloocckk:hover a {
+.sidebar ul li.block:hover a {
 	width:114px;
 	background:url(../images/nav-icon.png) no-repeat 35px -675px #aec066;
 }
-.sidebar ul li.bblloocckk a {
+.sidebar ul li.block a {
 	width:114px;
 	height:144px;
 	background:url(../images/nav-icon.png) no-repeat 35px -576px #aec066;
@@ -992,14 +992,18 @@ p a:hover {
 	border: 1px solid #ccc;
     padding: 5px;
 }
-.body .content-bblloocckk div div {
+
+
+
+/*
+.body .content-block div div {
 	background:none;
 	float:left;
 	margin:0;
 	padding:0 31px 0 0;
 	width:763px;
 }
-.body .content-bblloocckk div:first-child h3 {
+.body .content-block div:first-child h3 {
 	color:#5c3820;
 	font-size:27px;
 	font-weight:400 bold;
@@ -1011,8 +1015,8 @@ p a:hover {
 
 
 
-/*
-.body .content-bblloocckk div div h3 {
+
+.body .content-block div div h3 {
 	color:#5C3820;
 	font-size:27px;
 	font-weight:400;
@@ -1022,38 +1026,40 @@ p a:hover {
 	text-transform:uppercase;
 }
 */
-.body .content-bblloocckk div div ul {
+
+/*
+.body .content-block div div ul {
 	list-style:none;
 	margin:0;
 	padding:0;
 }
-.body .content-bblloocckk div div ul li {
+.body .content-block div div ul li {
 	border-bottom:1px solid #e2d4b1;
 	padding:29px 0 20px;
 }
-.body .content-bblloocckk div div ul li h4 {
+.body .content-block div div ul li h4 {
 	margin:20px 0 10px;
 }
-.body .content-bblloocckk div div ul li h4 a {
+.body .content-block div div ul li h4 a {
 	color:#7B8846;
 	font-size:18px;
 	font-weight:400;
 	text-decoration:none;
 	text-transform:none;
 }
-.body .content-bblloocckk div div ul li div span:first-child {
+.body .content-block div div ul li div span:first-child {
 	background:url(../images/icons.png) no-repeat left -130px;
 	float:left;
 	padding:0 0 0 22px;
 }
-.body .content-bblloocckk div div ul li div span a {
+.body .content-block div div ul li div span a {
 	font-family: Arial,Helvetica,sans-serif, "微軟正黑體";
 	font-size: 11px;
 	line-height:20px;
 	text-transform:none;
 	color:#5c3820;
 }
-.body .content-bblloocckk div div ul li div span {
+.body .content-block div div ul li div span {
 	background:url(../images/icons.png) no-repeat left -154px;
 	color:#5c3820;
 	display:inline-block;
@@ -1065,7 +1071,7 @@ p a:hover {
 	margin:0 0 17px;
 	padding:0 0 0 23px;
 }
-.body .content-bblloocckk div div ul li p {
+.body .content-block div div ul li p {
 	color:#5C3820;
 	font-size:13px;
 	letter-spacing:.02em;
@@ -1073,29 +1079,29 @@ p a:hover {
 	margin:0 0 26px;
 	padding:0 0 0 1px;
 }
-.body .content-bblloocckk div div ul li a {
+.body .content-block div div ul li a {
 	color:#ce4718;
 	text-decoration:none;
 	text-transform:uppercase;
 }
-.body .content-bblloocckk div div div.paging {
+.body .content-block div div div.paging {
 	margin:1109px 0 34px;
 	padding:0;
 }
-.body .content-bblloocckk div div div.paging ul {
+.body .content-block div div div.paging ul {
 	float:left;
 	overflow:hidden;
 }
-.body .content-bblloocckk div div div.paging ul li {
+.body .content-block div div div.paging ul li {
 	float:left;
 	margin:0 5px 0 0;
 	padding:0;
 	width:auto;
 }
-.body .content-bblloocckk div div div.paging ul li.selected a {
+.body .content-block div div div.paging ul li.selected a {
 	background-color:#DD8514;
 }
-.body .content-bblloocckk div div div.paging ul li a {
+.body .content-block div div div.paging ul li a {
 	background-color:#5C3820;
 	color:#FFF;
 	display:block;
@@ -1107,7 +1113,7 @@ p a:hover {
 	text-decoration:none;
 	width:23px;
 }
-.body .content-bblloocckk div div div.paging span {
+.body .content-block div div div.paging span {
 	background:url(../images/bg-2-column.png) repeat-y;
 	color:#5C3820;
 	float:right;
@@ -1118,7 +1124,7 @@ p a:hover {
 	padding:0 28px 0 0;
 	text-transform:uppercase;
 }
-.body .content-bblloocckk div div.sidebar div form input {
+.body .content-block div div.sidebar div form input {
 	background:url(../images/icons.png) no-repeat 0 -250px;
 	border:0;
 	float:left;
@@ -1126,7 +1132,7 @@ p a:hover {
 	margin:0 0 0 5px;
 	width:21px;
 }
-.body .content-bblloocckk-single div div h3 {
+.body .content-block-single div div h3 {
 	color:#5C3820;
 	font-size:27px;
 	font-weight:400;
@@ -1135,11 +1141,11 @@ p a:hover {
 	margin:0 0 7px;
 	text-transform:uppercase;
 }
-.body .content-bblloocckk-single div div div.paging {
+.body .content-block-single div div div.paging {
 	margin:0 0 15px;
 	overflow:hidden;
 }
-.body .content-bblloocckk-single div div div.paging a.next {
+.body .content-block-single div div div.paging a.next {
 	background:url(../images/icons.png) no-repeat 134px -176px;
 	color:#5D3820;
 	float:right;
@@ -1152,7 +1158,7 @@ p a:hover {
 	text-transform:uppercase;
 	margin: 0 10px;
 }
-.body .content-bblloocckk-single div div div.paging a.prev {
+.body .content-block-single div div div.paging a.prev {
 	background:url(../images/icons.png) no-repeat 0 -206px;
 	color:#5D3820;
 	display:inline-block;
@@ -1165,12 +1171,12 @@ p a:hover {
 	text-decoration:none;
 	text-transform:uppercase;
 }
-.body .content-bblloocckk-single div div ul {
+.body .content-block-single div div ul {
 	list-style:none outside none;
 	margin:0;
 	padding:0;
 }
-.body .content-bblloocckk-single div div ul li h4 {
+.body .content-block-single div div ul li h4 {
 	color:#7B8846;
 	font-size:18px;
 	font-weight:400;
@@ -1178,19 +1184,19 @@ p a:hover {
 	text-decoration:none;
 	text-transform:none;
 }
-.body .content-bblloocckk-single div div ul li div span:first-child {
+.body .content-block-single div div ul li div span:first-child {
 	background:url(../images/icons.png) no-repeat 0 -130px;
 	float:left;
 	padding:0 0 0 22px;
 }
-.body .content-bblloocckk-single div div ul li div span a {
+.body .content-block-single div div ul li div span a {
 	color:#5C3820;
 	text-decoration:none;
 }
-.body .content-bblloocckk-single div div ul li div span a:hover {
+.body .content-block-single div div ul li div span a:hover {
 	text-decoration:underline;
 }
-.body .content-bblloocckk-single div div ul li div span {
+.body .content-block-single div div ul li div span {
 	background:url(../images/icons.png) no-repeat 0 -156px;
 	color:#5C3820;
 	display:inline-block;
@@ -1202,11 +1208,11 @@ p a:hover {
 	margin:0 0 17px;
 	padding:0 0 0 23px;
 }
-.body .content-bblloocckk-single div div ul li div.section {
+.body .content-block-single div div ul li div.section {
 	border-top:1px solid #E2D4B1;
 	padding:21px 0 154px;
 }
-.body .content-bblloocckk-single div div ul li div.section div span {
+.body .content-block-single div div ul li div.section div span {
 	background:none;
 	color:#5c3820;
 	display:block;
@@ -1218,18 +1224,18 @@ p a:hover {
 	margin:0 0 5px;
 	padding:0;
 }
-.body .content-bblloocckk-single div div ul li div.section div div {
+.body .content-block-single div div ul li div.section div div {
 	float:left;
 	margin:0 20px 0 0;
 	padding:0;
 	width:60px;
 }
-.body .content-bblloocckk-single div div ul li div.section div div a {
+.body .content-block-single div div ul li div.section div div a {
 	display:block;
 	float:none;
 	margin:0 0 3px;
 }
-.body .content-bblloocckk-single div div ul li div.section div h4 {
+.body .content-block-single div div ul li div.section div h4 {
 	color:#7b8846;
 	display:block;
 	float:none;
@@ -1240,7 +1246,7 @@ p a:hover {
 	padding:0 0 0 1px;
 	text-align:left;
 }
-.body .content-bblloocckk-single div div ul li div.section div div span {
+.body .content-block-single div div ul li div.section div div span {
 	color:#5C3820;
 	display:block;
 	font-family:Arial, Helvetica, sans-serif;
@@ -1249,7 +1255,7 @@ p a:hover {
 	line-height:20px;
 	text-align:center;
 }
-.body .content-bblloocckk-single div div ul li div.section div a {
+.body .content-block-single div div ul li div.section div a {
 	color:#ce4718;
 	float:right;
 	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
@@ -1259,20 +1265,20 @@ p a:hover {
 	margin:0 0 28px;
 	text-decoration:none;
 }
-.body .content-bblloocckk-single div div ul li div.section div p a {
+.body .content-block-single div div ul li div.section div p a {
 	float:none;
 	margin:0;
 }
-.body .content-bblloocckk-single div div ul li div.section div form {
+.body .content-block-single div div ul li div.section div form {
 	border-top:1px solid #E2D4B1;
 	clear:both;
 	margin:0 0 46px;
 	padding:23px 0 0;
 }
-.body .content-bblloocckk-single div div ul li div.section div form h4 {
+.body .content-block-single div div ul li div.section div form h4 {
 	margin:0 0 12px;
 }
-.body .content-bblloocckk-single div div ul li div.section div form textarea {
+.body .content-block-single div div ul li div.section div form textarea {
 	background-color:#eee;
 	border:1px solid #b9b9b9;
 	color:#939393;
@@ -1287,7 +1293,7 @@ p a:hover {
 	resize:none;
 	width:451px;
 }
-.body .content-bblloocckk-single div div.sidebar div form input {
+.body .content-block-single div div.sidebar div form input {
 	background:url(../images/bg-search.png) no-repeat;
 	border:0;
 	float:left;
@@ -1295,6 +1301,17 @@ p a:hover {
 	margin:0 0 0 5px;
 	width:21px;
 }
+*/
+.body .content-block div.block{
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
+	width:95%;
+	background-color: none;
+	border-bottom: 2px solid gray;
+}
+
+
+
 .body .content-blog div {
 	background:url(../images/bg-2-column.png) repeat-y scroll 0 0 transparent;
 	margin:0 5px 0 18px;
@@ -1389,84 +1406,84 @@ p a:hover {
 	color:#ce4718;
 	text-decoration:none;
 }
-.body .content-home div p a:hover, .body .content-home div ul li a:hover, .body .content-start div div p a:hover, .body .content-start div div.sidebar div.section ul li a:hover, .body .content-start div div.sidebar div.section ul li span a:hover, .body .content-example div ul li span a:hover, .body .content-example div.figure div p a:hover, .body .content-bblloocckk div div ul li p a:hover, .body .content-bblloocckk div div ul li a:hover, .body .content-bblloocckk-single div div div.paging a:hover, .body .content-bblloocckk-single div div ul li h4 a:hover, .body .content-bblloocckk-single div div ul li p a:hover, .body .content-bblloocckk-single div div ul li div.section div a:hover, .body .content-blog div div p a:hover {
+.body .content-home div p a:hover, .body .content-home div ul li a:hover, .body .content-start div div p a:hover, .body .content-start div div.sidebar div.section ul li a:hover, .body .content-start div div.sidebar div.section ul li span a:hover, .body .content-example div ul li span a:hover, .body .content-example div.figure div p a:hover, .body .content-block div div ul li p a:hover, .body .content-block div div ul li a:hover, .body .content-block-single div div div.paging a:hover, .body .content-block-single div div ul li h4 a:hover, .body .content-block-single div div ul li p a:hover, .body .content-block-single div div ul li div.section div a:hover, .body .content-blog div div p a:hover {
 	text-decoration:underline;
 }
-.body .content-home div.featured, .body .content-start div.featured,.body .content-example div.featured, .body .content-bblloocckk div.featured  {
+.body .content-home div.featured, .body .content-start div.featured,.body .content-example div.featured, .body .content-block div.featured  {
 	background:url(../images/shadow.png) no-repeat left bottom;
 	margin:0;
 	padding:0 0 9px;
 	position:relative;
 	z-index:1000;
 }
-.body .content-home div.featured img, .body .content-start div.featured img, .body .content-example div.featured img, .body .content-bblloocckk div.featured img{
+.body .content-home div.featured img, .body .content-start div.featured img, .body .content-example div.featured img, .body .content-block div.featured img{
 	display:block;
 	margin:0 0 0 13px;
 }
-.body .content-home div ul li:first-child, .body .content-start, .body .content-start div div.sidebar div ul li:first-child, .body .content-start div div.sidebar div.section ul li:first-child, .body .content-bblloocckk div div.sidebar div.blog-categories ul li:first-child, .body .content-bblloocckk-single div div.sidebar div.blog-categories ul li:first-child {
+.body .content-home div ul li:first-child, .body .content-start, .body .content-start div div.sidebar div ul li:first-child, .body .content-start div div.sidebar div.section ul li:first-child, .body .content-block div div.sidebar div.blog-categories ul li:first-child, .body .content-block-single div div.sidebar div.blog-categories ul li:first-child {
 	margin:0;
 }
 .body .content-start div div.sidebar div:first-child a.selected, .body .content-example div.navigation ul li a:hover, .body .content-example div.navigation ul li.selected a {
 	color:#ce4718;
 }
-.body .content-start div div.sidebar div ul li a, .body .content-bblloocckk div div.sidebar div ul li a, .body .content-bblloocckk-single div div.sidebar div ul li a {
+.body .content-start div div.sidebar div ul li a, .body .content-block div div.sidebar div ul li a, .body .content-block-single div div.sidebar div ul li a {
 	margin:0 0 -1px;
 }
-.body .content-start div div.sidebar div ul li a img:hover, .body .content-example div ul li a img:hover, .body .content-bblloocckk div div ul li a:first-child img:hover, .body .content-bblloocckk div div.sidebar div ul li a img:hover, .body .content-bblloocckk-single div div ul li a img:hover, .body .content-bblloocckk-single div div.sidebar div ul li a img:hover {
+.body .content-start div div.sidebar div ul li a img:hover, .body .content-example div ul li a img:hover, .body .content-block div div ul li a:first-child img:hover, .body .content-block div div.sidebar div ul li a img:hover, .body .content-block-single div div ul li a img:hover, .body .content-block-single div div.sidebar div ul li a img:hover {
 	filter:alpha(opacity=80);/* Needed for IE8 and old versions */
 	opacity:0.8;
 }
-.body .content-start div div.sidebar div.section ul, .body .content-bblloocckk div div.sidebar div.section ul, .body .content-bblloocckk-single div div.sidebar div.section ul {
+.body .content-start div div.sidebar div.section ul, .body .content-block div div.sidebar div.section ul, .body .content-block-single div div.sidebar div.section ul {
 	margin:0;
 	padding:0;
 }
-.body .content-start div div.sidebar div.section ul li span, .body .content-bblloocckk div div.sidebar div.section ul li span, .body .content-bblloocckk-single div div.sidebar div.section ul li span {
+.body .content-start div div.sidebar div.section ul li span, .body .content-block div div.sidebar div.section ul li span, .body .content-block-single div div.sidebar div.section ul li span {
 	display:inline-block;
 	font-size:10px;
 }
-.body .content-bblloocckk div, .body .content-bblloocckk-single div {
+.body .content-block div, .body .content-block-single div {
 	background:url(../images/bg-2-column.png) repeat-y scroll 0 0 transparent;
 	margin:0 5px 0 18px;
 	overflow:hidden;
 	padding:26px 0 0 30px;
 }
-.body .content-bblloocckk div div ul li:first-child, .body .content-bblloocckk div div.sidebar div.section ul li:first-child, .body .content-bblloocckk-single div div.sidebar div.section ul li:first-child {
+.body .content-block div div ul li:first-child, .body .content-block div div.sidebar div.section ul li:first-child, .body .content-block-single div div.sidebar div.section ul li:first-child {
 	padding-top:0;
 }
-.body .content-bblloocckk div div ul li p a, .body .content-bblloocckk-single div div ul li p a {
+.body .content-block div div ul li p a, .body .content-block-single div div ul li p a {
 	color:#CE4718;
 	margin:0;
 	text-decoration:none;
 	text-transform:none;
 }
-.body .content-bblloocckk div div.sidebar, .body .content-bblloocckk-single div div.sidebar {
+.body .content-block div div.sidebar, .body .content-block-single div div.sidebar {
 	background:none repeat scroll 0 0 transparent;
 	float:left;
 	padding:0;
 	width:281px;
 }
-.body .content-bblloocckk div div.sidebar div:first-child, .body .content-bblloocckk-single div div.sidebar div:first-child {
+.body .content-block div div.sidebar div:first-child, .body .content-block-single div div.sidebar div:first-child {
 	border:0;
 	padding-top:0;
 }
-.body .content-bblloocckk div div.sidebar div, .body .content-bblloocckk-single div div.sidebar div {
+.body .content-block div div.sidebar div, .body .content-block-single div div.sidebar div {
 	background:none repeat scroll 0 0 transparent;
 	border-top:1px solid #E2D4B1;
 	padding:11px 20px 0;
 	width:241px;
 }
-.body .content-bblloocckk div div.sidebar div h3, .body .content-bblloocckk-single div div.sidebar div h3 {
+.body .content-block div div.sidebar div h3, .body .content-block-single div div.sidebar div h3 {
 	color:#7B8846;
 	font-size:21px;
 	font-weight:400;
 	margin:0;
 	text-transform:none;
 }
-.body .content-bblloocckk div div.sidebar div form, .body .content-bblloocckk-single div div.sidebar div form {
+.body .content-block div div.sidebar div form, .body .content-block-single div div.sidebar div form {
 	margin:0 0 17px;
 	overflow:hidden;
 }
-.body .content-bblloocckk div div.sidebar div form input:first-child, .body .content-bblloocckk-single div div.sidebar div form input:first-child {
+.body .content-block div div.sidebar div form input:first-child, .body .content-block-single div div.sidebar div form input:first-child {
 	background:none #fff;
 	border-color:#fef7e8;
 	border-style:solid solid solid none;
@@ -1479,17 +1496,17 @@ p a:hover {
 	padding:5px 5px 4px;
 	width:187px;
 }
-.body .content-bblloocckk div div.sidebar div.blog-categories ul, .body .content-bblloocckk-single div div.sidebar div.blog-categories ul {
+.body .content-block div div.sidebar div.blog-categories ul, .body .content-block-single div div.sidebar div.blog-categories ul {
 	margin:9px 0 21px;
 	padding:0;
 }
-.body .content-bblloocckk div div.sidebar div.blog-categories ul li, .body .content-bblloocckk-single div div.sidebar div.blog-categories ul li {
+.body .content-block div div.sidebar div.blog-categories ul li, .body .content-block-single div div.sidebar div.blog-categories ul li {
 	border:0;
 	margin:12px 0 0;
 	padding:0;
 	width:241px;
 }
-.body .content-bblloocckk div div.sidebar div.blog-categories ul li a, .body .content-bblloocckk-single div div.sidebar div.blog-categories ul li a {
+.body .content-block div div.sidebar div.blog-categories ul li a, .body .content-block-single div div.sidebar div.blog-categories ul li a {
 	color:#5c3820;
 	float:none;
 	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
@@ -1501,31 +1518,31 @@ p a:hover {
 	text-align:left;
 	text-transform:none;
 }
-.body .content-bblloocckk div div.sidebar div.blog-categories ul li a:hover, .body .content-bblloocckk-single div div.sidebar div.blog-categories ul li a:hover {
+.body .content-block div div.sidebar div.blog-categories ul li a:hover, .body .content-block-single div div.sidebar div.blog-categories ul li a:hover {
 	color:#ce4718;
 	text-decoration:none!important;
 }
-.body .content-bblloocckk div div.sidebar div ul, .body .content-bblloocckk-single div div.sidebar div ul {
+.body .content-block div div.sidebar div ul, .body .content-block-single div div.sidebar div ul {
 	list-style:none outside none;
 	margin:-7px 0 0 -8px;
 	overflow:hidden;
 	padding:3px 0 5px;
 }
-.body .content-bblloocckk div div.sidebar div ul li, .body .content-bblloocckk-single div div.sidebar div ul li {
+.body .content-block div div.sidebar div ul li, .body .content-block-single div div.sidebar div ul li {
 	border:0;
 	float:left;
 	padding:10px;
 	width:63px;
 }
-.body .content-bblloocckk div div.sidebar div.section ul li, .body .content-bblloocckk-single div div.sidebar div.section ul li {
+.body .content-block div div.sidebar div.section ul li, .body .content-block-single div div.sidebar div.section ul li {
 	padding:6px 0 0;
 	width:241px;
 }
-.body .content-bblloocckk div div.sidebar div.section ul li a:first-child, .body .content-bblloocckk-single div div.sidebar div.section ul li a:first-child {
+.body .content-block div div.sidebar div.section ul li a:first-child, .body .content-block-single div div.sidebar div.section ul li a:first-child {
 	float:left;
 	margin:12px 20px 0 0;
 }
-.body .content-bblloocckk div div.sidebar div.section ul li a, .body .content-bblloocckk-single div div.sidebar div.section ul li a {
+.body .content-block div div.sidebar div.section ul li a, .body .content-block-single div div.sidebar div.section ul li a {
 	color:#5C3820;
 	float:left;
 	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
@@ -1536,25 +1553,25 @@ p a:hover {
 	margin:6px 0 0;
 	text-transform:none;
 }
-.body .content-bblloocckk div div.sidebar div.section ul li a:hover, .body .content-bblloocckk-single div div.sidebar div.section ul li a:hover {
+.body .content-block div div.sidebar div.section ul li a:hover, .body .content-block-single div div.sidebar div.section ul li a:hover {
 	color:#ce4718;
 	text-decoration:none!important;
 }
-.body .content-bblloocckk div div.sidebar div.section ul li span a, .body .content-bblloocckk-single div div.sidebar div.section ul li span a {
+.body .content-block div div.sidebar div.section ul li span a, .body .content-block-single div div.sidebar div.section ul li span a {
 	display:inline;
 	float:none!important;
 	font-size:10px;
 	font-weight:400;
 	margin:0!important;
 }
-.body .content-bblloocckk-single div div, .body .content-blog div div {
+.body .content-block-single div div, .body .content-blog div div {
 	background:none repeat scroll 0 0 transparent;
 	float:left;
 	margin:0;
 	padding:0 31px 0 0;
 	width:473px;
 }
-.body .content-bblloocckk-single div div ul li p, .body .content-blog div div p {
+.body .content-block-single div div ul li p, .body .content-blog div div p {
 	color:#5C3820;
 	font-size:13px;
 	letter-spacing:.02em;
@@ -1562,7 +1579,7 @@ p a:hover {
 	margin:0 0 24px;
 	padding:0 0 0 1px;
 }
-.body .content-bblloocckk-single div div ul li div.section div form input, .body .content-blog div div form input {
+.body .content-block-single div div ul li div.section div form input, .body .content-blog div div form input {
 	background-color:#eee;
 	border:1px solid #b9b9b9;
 	color:#939393;
@@ -1576,7 +1593,7 @@ p a:hover {
 	padding:4px 10px;
 	width:451px;
 }
-.body .content-bblloocckk-single div div ul li div.section div form input#submit, .body .content-blog div div form input.submit {
+.body .content-block-single div div ul li div.section div form input#submit, .body .content-blog div div form input.submit {
 	background-color:#dd8514;
 	border:0;
 	color:#fff;
@@ -1588,25 +1605,25 @@ p a:hover {
 	margin:0;
 	width:119px;
 }
-.body .content-bblloocckk-single div div ul li div.section div form input#submit:hover, .body .content-blog div div form input.submit:hover {
+.body .content-block-single div div ul li div.section div form input#submit:hover, .body .content-blog div div form input.submit:hover {
 	background-color:#e0912c;
 }
 
 
-.body .content-bblloocckk div span.variable {
+.body .content-block div span.variable {
 	color:#13abe1;
 }
-.body .content-bblloocckk div span.highlight {
+.body .content-block div span.highlight {
 	font-weight: bold;	
 }
-.body .content-bblloocckk div a h3 {
+.body .content-block div a h3 {
 	font-weight: bold;	
 	font-size: 22px;
 }
-.body .content-bblloocckk div a.hyperlink  {
+.body .content-block div a.hyperlink  {
 	text-decoration: none;
 }
-.body .content-bblloocckk div span.block-name  {
+.body .content-block div span.block-name  {
 	color:#FE3E42;
 	font-weight: bold;
 }
@@ -1746,4 +1763,7 @@ p a:hover {
 background-color: black;
 
 }
+
+
+
 

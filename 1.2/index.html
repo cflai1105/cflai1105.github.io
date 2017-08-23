@@ -51,6 +51,22 @@
 		
 		
 	</style> 
+	
+	
+	
+	
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-101873011-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+	
+	
 </head>
 
 
@@ -58,8 +74,6 @@
 
 
 <body>
-
-
 <script type="text/javascript">
 		
 	try {
@@ -67,7 +81,7 @@
 		switch (language) {
 		  case 'zh-cn':
 			console.log('/zh-CN' + window.location.pathname);
-				alert("zh-cn");
+				//alert("zh-cn");
 				//window.location.href = '/zh-CN' + window.location.pathname;
 				window.location.href = 'tw/index.html';
 			return true;
@@ -85,14 +99,15 @@
 		  case 'en':
 		  case 'en-us':
 			console.log('/en-US' + window.location.pathname);
-				alert("en-us");
+				//alert("en-us");
 				//window.location.href = '/en-US' + window.location.pathname;
-				window.location.href = 'blog/index.html';
+				window.location.href = 'https://zenboscratch.github.io';
 			return true;
 			break;
 
 		  default:
 				console.log('default:');
+				window.location.href = 'https://zenboscratch.github.io';
 		}
 		console.log('error:');
 		return false;
@@ -117,12 +132,12 @@
 	  if (!found) {
 		  console.log('not found:');
 		  //window.location.href = '/en-US' + window.location.pathname;
-		  window.location.href = 'blog/index.html';
+		  window.location.href = 'https://zenboscratch.github.io';
 	  }
 	} catch (e) {
 		console.log('exception');
 	    //window.location.href = '/en-US' + window.location.pathname;
-		window.location.href = 'blog/index.html';
+		window.location.href = 'https://zenboscratch.github.io';
 	}
 
 </script>
@@ -141,7 +156,7 @@
 	
 		<div class="footer-sub">
 
-				<a href="tw/index.html">中文版</a> | <a href="blog/index.html">ENGLISH</a>
+				<a href="tw/index.html">中文版</a> | <a href="https://zenboscratch.github.io">ENGLISH</a>
 
 		</div>
 	</div>
