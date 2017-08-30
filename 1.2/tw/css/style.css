@@ -1,9 +1,10 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 /*------------------------- Layout styles ------------------------*/
 body {
 	margin:0;
 	background-color:#efefef;
-	font-family:'AbelRegular', "微軟正黑體";
+	font-family:Noto Sans TC, 'AbelRegular', "微軟正黑體";
 	position:relative;
 }
 a {
@@ -14,7 +15,7 @@ p {
 }
 /*
 p a {
-	color:#5c3820!important;
+	color:#5c3820!important;c
 	text-decoration:underline!important;
 }
 */
@@ -99,6 +100,11 @@ p a:hover {
 	width:960px;
 	margin:0 auto;
 }
+.page .about-page {
+	background:url(../images/bg-about.png) repeat-y right top;
+	overflow:hidden;
+	min-height:720px;
+}
 .page .home-page {
 	background:url(../images/bg-home.png) repeat-y right top;
 	overflow:hidden;
@@ -127,13 +133,11 @@ p a:hover {
 /*------------------------- Fonts ------------------------*/
 @font-face {
 	font-family: 'AbelRegular';
-	src: url('fonts/abel-regular-webfont.eot');
-	src: url('fonts/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),  url('fonts/abel-regular-webfont.woff') format('woff'),  url('fonts/abel-regular-webfont.ttf') format('truetype'),  url('fonts/abel-regular-webfont.svg#AbelRegular') format('svg');
+	src: url('../fonts/abel-regular-webfont.eot');
+	src: url('../fonts/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/abel-regular-webfont.woff') format('woff'),  url('../fonts/abel-regular-webfont.ttf') format('truetype'),  url('../fonts/abel-regular-webfont.svg#AbelRegular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
-
-
 
 /*------------------------- Sidebar ------------------------*/
 .sidebar {
@@ -155,7 +159,7 @@ p a:hover {
 }
 .sidebar ul li a {
 	color:#FFF;
-	font-family:AbelRegular, "微軟正黑體"; 
+	font-family:Noto Sans TC, AbelRegular, "微軟正黑體"; 
 	font-size:18px;
 	letter-spacing:.04em;
 	line-height:215px;
@@ -164,6 +168,7 @@ p a:hover {
 	text-decoration:none;
 	text-align:center;
 	float:right;
+	text-shadow: 2px 2px 0px #555555;
 }
 .sidebar ul li.selected.home a, .sidebar ul li.selected.home:hover a {
 	border-radius: 10px 0 0px 10px;
@@ -298,7 +303,7 @@ p a:hover {
 .body .content-home div h3 {
 	color:#825444;
 	float:left;
-	font-family:AbelRegular, "微軟正黑體";
+	font-family:Noto Sans TC, AbelRegular, "微軟正黑體";
 	font-size:27px;
 	font-weight:400;
 	letter-spacing:.02em;
@@ -326,7 +331,7 @@ p a:hover {
 .body .content-home div p {
 	color:#5c3820;
 	float:left;
-	font-family:AbelRegular, "微軟正黑體";
+	font-family:Noto Sans TC, AbelRegular, "微軟正黑體";
 	font-size:17px;
 	line-height:30px;
 	margin:2px 0 0 110px;
@@ -352,7 +357,7 @@ p a:hover {
 }
 .body .content-home div ul li h4 a {
 	color:#fff;
-	font-family:"Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif, "微軟正黑體";
+	font-family:Noto Sans TC, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif, "微軟正黑體";
 	font-size:24px;
 	font-weight:400;
 	line-height:24px;
@@ -370,7 +375,7 @@ p a:hover {
 .body .content-home div ul li h3 a {
 	color:#13abe1;
 	float:none;
-	font-family:AbelRegular, "微軟正黑體";
+	font-family:Noto Sans TC, AbelRegular, "微軟正黑體";
 	font-size:23px;
 	text-decoration:none;
 	text-transform:none;
@@ -397,7 +402,7 @@ p a:hover {
 .body .content-home div ul li a {
 	clear:both;
 	color:#ce4718;
-	font-family:"Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif, "微軟正黑體";
+	font-family: Noto Sans TC, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif, "微軟正黑體";
 	font-size:16px;
 	line-height:24px;
 	text-decoration:none;
@@ -411,8 +416,13 @@ p a:hover {
 	background:none #FFF;
 	margin-top:0;
 	padding-bottom:0;
-	
 }
+.body .content-about div:first-child {
+	background:none #FFF;
+	margin-top:0;
+	padding-bottom:0;
+}
+
 .body .content-start div {
 	background:url(../images/bg-2-column.png) repeat-y;
 	background-color:#fff;
@@ -420,6 +430,15 @@ p a:hover {
 	overflow:hidden;
 	padding:26px 0 30px 30px;	
 }
+.body .content-about div {
+	background:url(../images/bg-2-column.png) repeat-y;
+	background-color:#fff;
+	margin:-9px 5px 0 18px;
+	overflow:hidden;
+	padding:26px 0 30px 30px;	
+}
+
+
 .body .content-start div:first-child h3 {
 	color:#5c3820;
 	font-size:27px;
@@ -429,12 +448,31 @@ p a:hover {
 	margin:0 0 36px;
 	text-transform:uppercase;
 }
+.body .content-about div:first-child h3 {
+	color:#5c3820;
+	font-size:27px;
+	font-weight:400 bold;
+	letter-spacing:.02em;
+	line-height:36px;
+	margin:0 0 36px;
+	text-transform:uppercase;
+}
+
+
+
 .body .content-start div div {
 	float:left;
 	margin:0;
 	padding:5px 60px 0 0;
 	width:710px;
 }
+.body .content-about div div {
+	float:left;
+	margin:0;
+	padding:5px 60px 0 0;
+	width:710px;
+}
+
 
 .body .content-start div div h1 {
 	color:#7b8846;
@@ -442,41 +480,90 @@ p a:hover {
 	font-weight:400 bold;
 	line-height:24px;
 	margin:0;
-	font-family:AbelRegular, "微軟正黑體";
+	font-family:Noto Sans TC, AbelRegular, "微軟正黑體";
 }
+.body .content-about div div h1 {
+	color:#7b8846;
+	font-size:22px;
+	font-weight:400 bold;
+	line-height:24px;
+	margin:0;
+	font-family:Noto Sans TC, "微軟正黑體";
+}
+
+
 .body .content-start div div p {
 	color:#5c3820;
 	font-size:18px;
 	line-height:24px;
 	margin:0 0 22px;
 	padding:0 0 0 1px;
-	font-family:AbelRegular, "微軟正黑體";
+	font-family:Noto Sans TC, AbelRegular, "微軟正黑體";
 }
+.body .content-about div div p {
+	color:#5c3820;
+	font-size:18px;
+	line-height:24px;
+	margin:0 0 22px;
+	padding:0 0 0 1px;
+	font-family:Noto Sans TC, AbelRegular, "微軟正黑體";
+}
+
+
 .body .content-start div div p span.highlight-text-bigger  {
 	color:#000000;
 	font-size:22px;
 }
+.body .content-about div div p span.highlight-text-bigger  {
+	color:#000000;
+	font-size:22px;
+}
+
+
 .body .content-start div div p span.highlight-text-normal  {
 	color:#000000;
 	font-size:18px;
-
 }
+.body .content-about div div p span.highlight-text-normal  {
+	color:#000000;
+	font-size:18px;
+}
+
 
 .body .content-start div div p span.url-text-normal  {
 	color:#0061CC;
 	font-size:18px;
+}
+.body .content-about div div p span.url-text-normal  {
+	color:#0061CC;
+	font-size:18px;
 
 }
+
 .body .content-start div div.sidebar {
 	background:none;
 	float:left;
 	padding:0;
 	width:281px;
 }
+.body .content-about div div.sidebar {
+	background:none;
+	float:left;
+	padding:0;
+	width:281px;
+}
+
+
 .body .content-start div div.sidebar div:first-child {
 	border:0;
 	padding-bottom:7px;
 }
+.body .content-about div div.sidebar div:first-child {
+	border:0;
+	padding-bottom:7px;
+}
+
+
 .body .content-start div div.sidebar div:first-child a {
 	color:#5c3820;
 	display:block;
@@ -487,15 +574,41 @@ p a:hover {
 	margin:0 0 12px;
 	text-decoration:none;
 }
+.body .content-about div div.sidebar div:first-child a {
+	color:#5c3820;
+	display:block;
+	font-size:13px;
+	font-weight:700;
+	letter-spacing:.02em;
+	line-height:24px;
+	margin:0 0 12px;
+	text-decoration:none;
+}
+
+
+
 .body .content-start div div.sidebar div:first-child a:hover {
 	color:#ce4718;
 }
+.body .content-about div div.sidebar div:first-child a:hover {
+	color:#ce4718;
+}
+
+
 .body .content-start div div.sidebar div {
 	background:none;
 	border-top:1px solid #e2d4b1;
 	padding:0 20px;
 	width:241px;
 }
+.body .content-about div div.sidebar div {
+	background:none;
+	border-top:1px solid #e2d4b1;
+	padding:0 20px;
+	width:241px;
+}
+
+
 .body .content-start div div.sidebar div h3 {
 	color:#7B8846;
 	font-size:21px;
@@ -503,30 +616,69 @@ p a:hover {
 	margin:13px 0 8px;
 	text-transform:none;
 }
+.body .content-about div div.sidebar div h3 {
+	color:#7B8846;
+	font-size:21px;
+	font-weight:400;
+	margin:13px 0 8px;
+	text-transform:none;
+}
+
+
 .body .content-start div div.sidebar div ul {
 	list-style:none;
 	margin:-10px 0 0 -8px;
 	overflow:hidden;
 	padding:3px 0 5px;
 }
+.body .content-about div div.sidebar div ul {
+	list-style:none;
+	margin:-10px 0 0 -8px;
+	overflow:hidden;
+	padding:3px 0 5px;
+}
+
+
 .body .content-start div div.sidebar div ul li {
 	float:left;
 	padding:10px;
 	width:63px;
 }
+.body .content-about div div.sidebar div ul li {
+	float:left;
+	padding:10px;
+	width:63px;
+}
+
+
+
 .body .content-start div div.sidebar div.section ul li {
 	margin:9px 0 0;
 	padding:0;
 	width:241px;
 }
+.body .content-about div div.sidebar div.section ul li {
+	margin:9px 0 0;
+	padding:0;
+	width:241px;
+}
+
+
+
 .body .content-start div div.sidebar div.section ul li a:first-child {
 	float:left;
 	margin:9px 20px 0 0;
 }
+.body .content-about div div.sidebar div.section ul li a:first-child {
+	float:left;
+	margin:9px 20px 0 0;
+}
+
+
 .body .content-start div div.sidebar div.section ul li a {
 	color:#5c3820;
 	float:left;
-	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
 	font-size:12px;
 	font-weight:700;
 	letter-spacing:.02em;
@@ -534,10 +686,47 @@ p a:hover {
 	margin:6px 0 0;
 	text-transform:none;
 }
+.body .content-about div div.sidebar div.section ul li a {
+	color:#5c3820;
+	float:left;
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
+	font-size:12px;
+	font-weight:700;
+	letter-spacing:.02em;
+	line-height:24px;
+	margin:6px 0 0;
+	text-transform:none;
+}
+
+
+
+
+
 .body .content-start div div.sidebar div.section ul li a:hover {
 	text-decoration:none!important;
 	color:#ce4718;
 }
+.body .content-about div div.sidebar div.section ul li a:hover {
+	text-decoration:none!important;
+	color:#ce4718;
+}
+
+
+.body .content-start div div p{
+	text-indent: 25px;
+}
+
+.body .content-about div div p{
+	text-indent: 25px;
+}
+
+
+
+
+
+
+
+
 .body .content-start div div.sidebar div.section ul li span a {
 	display:inline;
 	float:none!important;
@@ -545,6 +734,120 @@ p a:hover {
 	font-weight:400;
 	margin:0!important;
 }
+.body .content-about div div.sidebar div.section ul li span a {
+	display:inline;
+	float:none!important;
+	font-size:10px;
+	font-weight:400;
+	margin:0!important;
+}
+
+
+
+
+
+
+
+
+
+
+.body .content-start div div p img {
+	border-radius: 15px;
+}
+.body .content-about div div p img {
+	border-radius: 15px;
+}
+
+
+
+.body .content-start div div p img:hover {
+	filter:alpha(opacity=90);/* Needed for IE8 and old versions */
+	opacity:0.9;
+	text-decoration:none;
+}
+.body .content-about div div p img:hover {
+	filter:alpha(opacity=90);/* Needed for IE8 and old versions */
+	opacity:0.9;
+	text-decoration:none;
+}
+
+
+
+.body .content-start div ul {
+	list-style:none;
+	margin:11px 0 25px;
+	overflow:hidden;
+	padding:0;
+}
+.body .content-about div ul {
+	list-style:none;
+	margin:11px 0 25px;
+	overflow:hidden;
+	padding:0;
+}
+
+
+
+.body .content-start div ul li {
+	float:left;
+	margin:0 0 0 35px;
+	position:relative;
+	width:360px;
+}
+.body .content-about div ul li {
+	float:left;
+	margin:0 0 0 35px;
+	position:relative;
+	width:360px;
+}
+
+
+
+.body .content-start div ul li h4 {
+	margin:32px 0 0 0;
+	position:absolute;
+	right:10px;
+	top:118px;
+}
+.body .content-about div ul li h4 {
+	margin:32px 0 0 0;
+	position:absolute;
+	right:10px;
+	top:118px;
+}
+
+
+
+.body .content-start div ul li h4 a {
+	color:#fff;
+	font-family:Noto Sans TC, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif, "微軟正黑體";
+	font-size:24px;
+	font-weight:400;
+	line-height:24px;
+	text-transform:uppercase;
+}
+.body .content-about div ul li h4 a {
+	color:#fff;
+	font-family:Noto Sans TC, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif, "微軟正黑體";
+	font-size:24px;
+	font-weight:400;
+	line-height:24px;
+	text-transform:uppercase;
+}
+
+
+
+.body .content-start div ul li h4 a:hover {
+	text-decoration:none;
+}
+.body .content-about div ul li h4 a:hover {
+	text-decoration:none;
+}
+
+
+
+
+
 .body .content-start div.content-start-after h2{
 	color:#4f4f4f;
 	font-size:21px;
@@ -554,7 +857,7 @@ p a:hover {
 }
 .body .content-start div.content-start-after ul li a {
 	color:#fff;
-	font-family:"Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif, "微軟正黑體";
+	font-family:Noto Sans TC, "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif, "微軟正黑體";
 	font-size:24px;
 	font-weight:400;
 	line-height:24px;
@@ -578,45 +881,6 @@ p a:hover {
 	position:relative;
 	width:360px;
 }
-.body .content-start div div p img {
-	border-radius: 15px;
-}
-
-.body .content-start div div p img:hover {
-	filter:alpha(opacity=90);/* Needed for IE8 and old versions */
-	opacity:0.9;
-	text-decoration:none;
-}
-.body .content-start div ul {
-	list-style:none;
-	margin:11px 0 25px;
-	overflow:hidden;
-	padding:0;
-}
-.body .content-start div ul li {
-	float:left;
-	margin:0 0 0 35px;
-	position:relative;
-	width:360px;
-}
-.body .content-start div ul li h4 {
-	margin:32px 0 0 0;
-	position:absolute;
-	right:10px;
-	top:118px;
-}
-.body .content-start div ul li h4 a {
-	color:#fff;
-	font-family:"Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif, "微軟正黑體";
-	font-size:24px;
-	font-weight:400;
-	line-height:24px;
-	text-transform:uppercase;
-}
-.body .content-start div ul li h4 a:hover {
-	text-decoration:none;
-}
-
 
 
 
@@ -936,7 +1200,7 @@ p a:hover {
 	background-color:#5c3820;
 	color:#fff;
 	display:block;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif;
 	font-size:13px;
 	height:23px;
 	line-height:24px;
@@ -947,7 +1211,7 @@ p a:hover {
 .body .content-example div div.paging span {
 	color:#5c3820;
 	float:right;
-	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
 	font-size:11px;
 	letter-spacing:.02em;
 	line-height:36px;
@@ -961,7 +1225,7 @@ p a:hover {
 	background-color:#dd8514;
 	color:#000000;
 	display:block;
-	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
 	font-size:12px;
 	height:30px;
 	line-height:30px;
@@ -980,7 +1244,7 @@ p a:hover {
 }
 .body .content-example div.figure div p {
 	color:#5c3820;
-	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
 	font-size:13px;
 	letter-spacing:.02em;
 	line-height:24px;
@@ -995,7 +1259,7 @@ p a:hover {
 
 
 
-/*
+
 .body .content-block div div {
 	background:none;
 	float:left;
@@ -1003,29 +1267,51 @@ p a:hover {
 	padding:0 31px 0 0;
 	width:763px;
 }
-.body .content-block div:first-child h3 {
-	color:#5c3820;
+
+.body .content-block div h3 {
+	color:#5C3820;
 	font-size:27px;
 	font-weight:400 bold;
 	letter-spacing:.02em;
 	line-height:36px;
-	margin:0 0 36px;
+	margin:0 0 20px;
 	text-transform:uppercase;
+	font-family:Noto Sans TC, AbelRegular, "微軟正黑體";
 }
-
-
-
-
-.body .content-block div div h3 {
-	color:#5C3820;
-	font-size:27px;
+.body .content-block div h4 {
+	color:#5c3820;
+	font-size:20px;
 	font-weight:400;
 	letter-spacing:.02em;
 	line-height:36px;
-	margin:0 0 57px;
+	margin:0 0 16px;
 	text-transform:uppercase;
+	font-family:Noto Sans TC, AbelRegular, "微軟正黑體";
 }
-*/
+.body .content-block div.block{
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
+	width:95%;
+	background-color: none;
+	border-bottom: 2px solid gray;
+	
+}
+
+.body .content-block div.block{
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
+	width:95%;
+	background-color: none;
+	border-bottom: 2px solid gray;
+	
+}
+
+
+.body .content-block div.block p{
+	font-family:Noto Sans TC, AbelRegular, "微軟正黑體";
+	font-size: 18px;
+	
+}
 
 /*
 .body .content-block div div ul {
@@ -1302,13 +1588,7 @@ p a:hover {
 	width:21px;
 }
 */
-.body .content-block div.block{
-	margin: 0px 0px 0px 0px;
-	padding: 10px 0px 0px 0px;
-	width:95%;
-	background-color: none;
-	border-bottom: 2px solid gray;
-}
+
 
 
 
@@ -1352,7 +1632,7 @@ p a:hover {
 	border:1px solid #B9B9B9;
 	color:#939393;
 	display:block;
-	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
 	font-size:11px;
 	height:189px;
 	letter-spacing:.02em;
@@ -1381,7 +1661,7 @@ p a:hover {
 .body .content-blog div div.sidebar span {
 	color:#5c3820;
 	display:block;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif;
 	font-size:12px;
 	font-weight:700;
 	letter-spacing:.02em;
@@ -1390,7 +1670,7 @@ p a:hover {
 }
 .body .content-blog div div.sidebar p {
 	color:#5c3820;
-	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
 	font-size:12px;
 	letter-spacing:.02em;
 	line-height:24px;
@@ -1409,14 +1689,14 @@ p a:hover {
 .body .content-home div p a:hover, .body .content-home div ul li a:hover, .body .content-start div div p a:hover, .body .content-start div div.sidebar div.section ul li a:hover, .body .content-start div div.sidebar div.section ul li span a:hover, .body .content-example div ul li span a:hover, .body .content-example div.figure div p a:hover, .body .content-block div div ul li p a:hover, .body .content-block div div ul li a:hover, .body .content-block-single div div div.paging a:hover, .body .content-block-single div div ul li h4 a:hover, .body .content-block-single div div ul li p a:hover, .body .content-block-single div div ul li div.section div a:hover, .body .content-blog div div p a:hover {
 	text-decoration:underline;
 }
-.body .content-home div.featured, .body .content-start div.featured,.body .content-example div.featured, .body .content-block div.featured  {
+.body .content-about div.featured, .content-home div.featured, .body .content-start div.featured,.body .content-example div.featured, .body .content-block div.featured  {
 	background:url(../images/shadow.png) no-repeat left bottom;
 	margin:0;
 	padding:0 0 9px;
 	position:relative;
 	z-index:1000;
 }
-.body .content-home div.featured img, .body .content-start div.featured img, .body .content-example div.featured img, .body .content-block div.featured img{
+.body .content-about div.featured, .content-home div.featured img, .body .content-start div.featured img, .body .content-example div.featured img, .body .content-block div.featured img{
 	display:block;
 	margin:0 0 0 13px;
 }
@@ -1509,7 +1789,7 @@ p a:hover {
 .body .content-block div div.sidebar div.blog-categories ul li a, .body .content-block-single div div.sidebar div.blog-categories ul li a {
 	color:#5c3820;
 	float:none;
-	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
 	font-size:12px;
 	font-weight:700;
 	letter-spacing:.02em;
@@ -1545,7 +1825,7 @@ p a:hover {
 .body .content-block div div.sidebar div.section ul li a, .body .content-block-single div div.sidebar div.section ul li a {
 	color:#5C3820;
 	float:left;
-	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
 	font-size:12px;
 	font-weight:700;
 	letter-spacing:.02em;
@@ -1584,7 +1864,7 @@ p a:hover {
 	border:1px solid #b9b9b9;
 	color:#939393;
 	display:block;
-	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
 	font-size:11px;
 	height:20px;
 	letter-spacing:.02em;
@@ -1598,7 +1878,7 @@ p a:hover {
 	border:0;
 	color:#fff;
 	cursor:pointer;
-	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
 	font-size:12px;
 	height:23px;
 	line-height:0;
@@ -1634,14 +1914,19 @@ p a:hover {
 .footer {
 	height:35px;
 	overflow:hidden;
-	margin:0;
-	padding:30px 5px 0 18px;
+	padding:20px 10px 0px 10px;
+	background-color: gray;
+	margin:10px 5px 0 18px;
+	border-radius: 15px 15px 0px 0px;
+	opacity: .9;
+	
+	border-bottom:2px solid #BBBBBB;
 }
 .footer p {
 	float:left;
 	color:#fff;
 	font-size:16px;
-	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
 	text-indent:2px;
 	letter-spacing:.02em;
 	margin:0;
@@ -1653,26 +1938,232 @@ p a:hover {
 	margin:-5px 0 0;
 	padding:0;
 }
+
 .footer ul li {
 	float:left;
 }
-.footer ul li a {
+.footer ul li a{
 	color:#fff;
 	font-size:16px;
-	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
 	text-indent:2px;
 	letter-spacing:.02em;
 	text-decoration:none;
 	border-left:1px solid #fff;
 	padding:0 6px;
 }
+
+
+
 .footer ul li:first-child a {
 	border:0;
 }
+
 .footer ul li a:hover {
 	text-decoration:underline;
 }
+/*
+.footer ul:first-child{
+	float:left;
+	overflow:hidden;
+	list-style:none;
+	margin:-5px 0 0;
+	padding:0;
+}
 
+.footer ul:first-child li {
+	float:left;
+}
+.footer ul:first-child li img{
+	vertical-align: text-top;
+	border-left:1px solid #fff;
+	padding: 0px 0px 0px 10px;
+	width: 22px;
+	height: 22px;
+}
+
+.footer ul:first-child li:first-child img{
+	border:0;
+}
+
+.footer ul:first-child li a {
+	color:#fff;
+	font-size:16px;
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
+	text-indent:2px;
+	letter-spacing:.02em;
+	text-decoration:none;
+	border-left:0px;
+	padding:0 6px;
+}
+*/
+
+
+.footer-bottom {
+	height:35px;
+	overflow:hidden;
+	padding:15px 10px 0px 10px;
+	background-color: #888888;
+	margin:0px 5px 10px 18px;
+	border-radius: 0px 0px 15px 15px;
+	border-top:1px solid #BBBBBB;
+	opacity: .9;
+	
+}
+.footer-bottom p {
+	float:left;
+	color:#fff;
+	font-size:16px;
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
+	text-indent:2px;
+	letter-spacing:.02em;
+	margin:0;
+}
+.footer-bottom ul {
+	float:right;
+	overflow:hidden;
+	list-style:none;
+	margin:-5px 0 0;
+	padding:0;
+}
+
+.footer-bottom ul li {
+	float:left;
+	font-family:Noto Sans TC, AbelRegular, "微軟正黑體";
+}
+.footer-bottom ul li a{
+	color:#fff;
+	font-size:14px;
+	font-family:Noto Sans TC, Arial, Helvetica, sans-serif, "微軟正黑體";
+	text-indent:2px;
+	letter-spacing:.02em;
+	text-decoration:none;
+	border-left:1px solid #fff;
+	padding:0 6px;
+	
+	text-shadow:2px 2px #555555;
+}
+.footer-bottom ul li:first-child a {
+	border:0;
+	font-family:Noto Sans TC, AbelRegular, "微軟正黑體";
+}
+.footer-bottom ul li a:hover {
+
+	font-family:Noto Sans TC, AbelRegular, "微軟正黑體";
+}
+.footer-bottom ul:first-child{
+	float:left;
+	overflow:hidden;
+	list-style:none;
+	margin:-5px 0 0;
+	padding:0;
+}
+.footer-bottom ul:first-child li {
+	float:left;
+}
+.footer-bottom ul:first-child li img{
+	vertical-align: text-top;
+	border-left:1px solid #fff;
+	padding: 0px 0px 0px 10px;
+}
+.footer-bottom ul:first-child li:first-child img{
+	border:0;
+	width: 22px;
+	height: 22px;
+}
+.footer-bottom ul:first-child li a {
+	color:#fff;
+	font-size:18px;
+
+	text-indent:2px;
+	letter-spacing:.02em;
+	text-decoration:none;
+	border-left:0px;
+	padding:0 6px;
+}
+
+
+
+
+
+
+
+
+
+
+.footer-middle{
+	opacity: .9;
+}
+
+.footer-middle-email{
+	display: inline-block;
+	margin:0px 0px -5px 18px;
+	width:407px;
+	height: 50px;
+	background-color:#3B5998;
+	overflow:hidden;
+	min-height:50px;
+	position: relative;    
+	z-index: 1; 
+}
+.footer-middle-email:hover{
+	background-color:#2A447B;	
+
+	overflow: hidden;
+	opacity: 1.0;
+}
+.footer-middle-email img{
+	vertical-align:sub;
+	padding: 0px 0px 0px 20px;
+	width: 22px;
+	height: 22px;
+	margin: 14px 0px 0px 0px;
+}
+.footer-middle-email a{
+	padding: 0px 0px 0px 5px;
+	width: 30px;
+	height: 30px;
+	text-decoration: none;
+	font-family:Noto Sans TC, AbelRegular, "微軟正黑體";
+	color: #fff;
+}
+.footer-middle-youtube{
+	display: inline-block;
+	width:408px;
+	margin:0px 0px -5px -3px;
+	height: 50px;
+	background-color:#D34836;
+	overflow:hidden;
+	min-height:50px;	
+}
+.footer-middle-youtube:hover{
+	background-color:#B33524;
+	opacity: 1.0;
+	overflow:hidden;
+}
+.footer-middle-youtube img{
+	vertical-align:sub;
+	margin: 14px 0px 0px 0px;
+	padding: 00px 0px 0px 150px;
+	width: 22px;
+	height: 22px;
+}
+.footer-middle-youtube a{
+	padding: 0px 0px 0px 5px;
+	width: 22px;
+	height: 22px;
+	text-decoration: none;
+	font-family:Noto Sans TC, AbelRegular, "微軟正黑體";
+	color: #fff;	
+}
+.footer-middle-youtube a#youtube{
+	display :inline-block;
+	width:190px;
+	height:40px;
+	padding:0px;
+	position:relative;
+	z-index: 9999;
+}
 
 
 
@@ -1682,8 +2173,6 @@ p a:hover {
 	/*border-width:3px; border-style:solid;*/
     /*border-collapse: collapse;*/
 }
-
-
 .body .content-example-detail table tr:nth-child(even){
 	/*example table even row cell*/
 	background-color: #f2f2f2;	
@@ -1741,7 +2230,6 @@ p a:hover {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   margin: 0px 0px 5px 15px;  /*add to arrage*/
-
 }
 
 .body .btn:hover {
@@ -1754,16 +2242,9 @@ p a:hover {
   text-decoration: none;
 }
 
-
-
-
-
-/*william test*/
 .body .content-dispatcher {
 background-color: black;
 
 }
-
-
 
 

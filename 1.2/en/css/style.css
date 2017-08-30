@@ -995,7 +995,7 @@ p a:hover {
 
 
 
-/*
+
 .body .content-block div div {
 	background:none;
 	float:left;
@@ -1025,7 +1025,7 @@ p a:hover {
 	margin:0 0 57px;
 	text-transform:uppercase;
 }
-*/
+
 
 /*
 .body .content-block div div ul {
@@ -1634,8 +1634,11 @@ p a:hover {
 .footer {
 	height:35px;
 	overflow:hidden;
-	margin:0;
-	padding:30px 5px 0 18px;
+	padding:20px 10px 0px 10px;
+	background-color: gray;
+	margin:10px 5px 0 18px;
+	border-radius: 15px 15px 0px 0px;
+
 }
 .footer p {
 	float:left;
@@ -1653,10 +1656,11 @@ p a:hover {
 	margin:-5px 0 0;
 	padding:0;
 }
+
 .footer ul li {
 	float:left;
 }
-.footer ul li a {
+.footer ul li a{
 	color:#fff;
 	font-size:16px;
 	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
@@ -1672,6 +1676,122 @@ p a:hover {
 .footer ul li a:hover {
 	text-decoration:underline;
 }
+
+.footer ul:first-child{
+	float:left;
+	overflow:hidden;
+	list-style:none;
+	margin:-5px 0 0;
+	padding:0;
+}
+.footer ul:first-child li {
+	float:left;
+}
+.footer ul:first-child li img{
+	vertical-align: text-top;
+	border-left:1px solid #fff;
+	padding: 0px 0px 0px 10px;
+	width: 22px;
+	height: 22px;
+}
+.footer ul:first-child li:first-child img{
+	border:0;
+}
+.footer ul:first-child li a {
+	color:#fff;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	text-indent:2px;
+	letter-spacing:.02em;
+	text-decoration:none;
+	border-left:0px;
+	padding:0 6px;
+}
+
+
+
+.footer-bottom {
+	height:35px;
+	overflow:hidden;
+	padding:35px 10px 0px 10px;
+	background-color: #888888;
+	margin:0px 5px 10px 18px;
+	border-radius: 0px 0px 15px 15px;
+	border-top:1px solid #BBBBBB;
+}
+.footer-bottom p {
+	float:left;
+	color:#fff;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	text-indent:2px;
+	letter-spacing:.02em;
+	margin:0;
+}
+.footer-bottom ul {
+	float:right;
+	overflow:hidden;
+	list-style:none;
+	margin:-5px 0 0;
+	padding:0;
+}
+
+.footer-bottom ul li {
+	float:left;
+}
+.footer-bottom ul li a{
+	color:#fff;
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	text-indent:2px;
+	letter-spacing:.02em;
+	text-decoration:none;
+	border-left:1px solid #fff;
+	padding:0 6px;
+	
+	text-shadow:2px 2px #555555;
+}
+.footer-bottom ul li:first-child a {
+	border:0;
+}
+.footer-bottom ul li a:hover {
+	text-decoration:underline;
+}
+
+
+
+
+.footer-bottom ul:first-child{
+	float:left;
+	overflow:hidden;
+	list-style:none;
+	margin:-5px 0 0;
+	padding:0;
+}
+.footer-bottom ul:first-child li {
+	float:left;
+}
+.footer-bottom ul:first-child li img{
+	vertical-align: text-top;
+	border-left:1px solid #fff;
+	padding: 0px 0px 0px 10px;
+}
+.footer-bottom ul:first-child li:first-child img{
+	border:0;
+	width: 22px;
+	height: 22px;
+}
+.footer-bottom ul:first-child li a {
+	color:#fff;
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif, "微軟正黑體";
+	text-indent:2px;
+	letter-spacing:.02em;
+	text-decoration:none;
+	border-left:0px;
+	padding:0 6px;
+}
+
 
 
 
@@ -1741,7 +1861,6 @@ p a:hover {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   margin: 0px 0px 5px 15px;  /*add to arrage*/
-
 }
 
 .body .btn:hover {
@@ -1754,16 +1873,9 @@ p a:hover {
   text-decoration: none;
 }
 
-
-
-
-
-/*william test*/
 .body .content-dispatcher {
 background-color: black;
 
 }
-
-
 
 
