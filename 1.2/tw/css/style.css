@@ -19,16 +19,17 @@ p a {
 }
 */
 p a:hover {
-	color: #995d36!important;
+	/*color: #995d36!important;*/
+	color: #7f7f7f!important;
 }
-#background-purebluegreen {
-	background: #014B52;
+#background-zenbobluegreen {
+	background: url(../images/bg-zenbo_bluegreen-absolute.png);
 	height: 100%;
 	margin: 0;
 	position: absolute;
 	right: 0;
 	text-indent: -99999px;
-	width: 100%;
+	width: 51%;
 	z-index: -1;
 }
 #background-zenboblue {
@@ -352,6 +353,16 @@ p a:hover {
 	font-family: Noto Sans TC, AbelRegular, "微軟正黑體";
 	text-align: center;	
 }
+.body-language .content-language div div p:hover {
+	color: #CFCFCF;
+	font-size: 22px;
+	line-height: 24px;
+	margin: 0 0 22px;
+	padding: 0px 0 0 0px;
+	font-family: Noto Sans TC, AbelRegular, "微軟正黑體";
+	text-align: center;	
+	text-decoration: none;
+}
 .body-language .content-language div div a {
 	color: #CFCFCF;
 	font-size: 27px;
@@ -362,6 +373,11 @@ p a:hover {
 	text-align: center;	
 	text-decoration: none;
 }
+.body-language .content-language div div a:hover {
+	text-decoration: none!important;
+	color: #000000;
+}
+
 
 
 
