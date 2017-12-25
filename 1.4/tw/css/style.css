@@ -299,12 +299,12 @@ p a:hover {
 .sidebar ul li.selected-focused-up.block-wide a, .sidebar ul li.selected-focused-up.block-wide:hover a {
 	border-radius: 10px 0 0px 0px;
 	width: 122px;
-	background: url(../images/nav-icon.png) no-repeat 38px -690px #aec066;
+	background: url(../images/nav-icon.png) no-repeat 36px -690px #aec066;
 }
 .sidebar ul li.selected-focused-down.block-wide a, .sidebar ul li.selected-focused-down.block-wide:hover a {
 	border-radius: 0px 0 0px 10px;
 	width: 122px;
-	background: url(../images/nav-icon.png) no-repeat 38px -690px #aec066;
+	background: url(../images/nav-icon.png) no-repeat 36px -690px #aec066;
 }
 
 .sidebar ul li.selected-not-focused-up.block-wide a, .sidebar ul li.selected-not-focused-up.block-wide:hover a {
@@ -320,31 +320,31 @@ p a:hover {
 .sidebar ul li.block-wide:hover a {
 	width: 122px;
 	/*background: url(../images/nav-icon.png) no-repeat 33px -480px #c0ac66;*/
-	background: url(../images/nav-icon.png) no-repeat 38px -690px #aec066;
+	background: url(../images/nav-icon.png) no-repeat 36px -690px #aec066;
 }
 .sidebar ul li.block-wide a {
 	width: 114px;
 	height: 122px;
-	background: url(../images/nav-icon.png) no-repeat 35px -591px #aec066;
+	background: url(../images/nav-icon.png) no-repeat 36px -591px #aec066;
 }
 .sidebar ul li.selected.block a, .sidebar ul li.selected.block:hover a {
 	/*border-radius: 10px 0 0px 10px;*/
 	/*width: 122px;*/
 	width: 122px;
 	/*background: url(../images/nav-icon.png) no-repeat 38px -675px #aec066;*/
-	background: url(../images/nav-icon.png) no-repeat 38px -690px #aec066;
+	background: url(../images/nav-icon.png) no-repeat 36px -690px #aec066;
 }
 .sidebar ul li.block:hover a {
 	width: 114px;
 	/*background: url(../images/nav-icon.png) no-repeat 35px -675px #aec066;*/
-	background: url(../images/nav-icon.png) no-repeat 38px -690px #aec066;
+	background: url(../images/nav-icon.png) no-repeat 36px -690px #aec066;
 }
 .sidebar ul li.block a {
 	width: 114px;
 	/*height: 144px;*/
 	height: 120px;
 	/*background: url(../images/nav-icon.png) no-repeat 35px -576px #aec066;*/
-	background: url(../images/nav-icon.png) no-repeat 35px -591px #aec066;
+	background: url(../images/nav-icon.png) no-repeat 36px -591px #aec066;
 }
 
 
@@ -365,18 +365,18 @@ p a:hover {
 	/*height: 144px;*/
 	height: 120px;
 	/*background: url(../images/nav-icon.png) no-repeat 33px -763px #528846;*/
-	background: url(../images/nav-icon.png) no-repeat 33px -778px #528846;
+	background: url(../images/nav-icon.png) no-repeat 37px -778px #528846;
 }
 
 
 .sidebar ul li.selected.about a, .sidebar ul li.selected.about:hover a {
 	border-radius: 10px 0 0px 10px;
 	width: 122px;
-	background: url(../images/nav-icon.png) no-repeat 37px -1036px #0d6a81;
+	background: url(../images/nav-icon.png) no-repeat 33px -1036px #0d6a81;
 }
 .sidebar ul li.about:hover a {
 	width: 114px;
-	background: url(../images/nav-icon.png) no-repeat 37px -1036px #0d6a81;
+	background: url(../images/nav-icon.png) no-repeat 33px -1036px #0d6a81;
 }
 .sidebar ul li.about a {
 	width: 114px;
