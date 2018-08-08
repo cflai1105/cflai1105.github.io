@@ -62,9 +62,14 @@ if(false) {}
 "use strict";
 
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; // Polyfills
+// For Safari 9
 
 __webpack_require__(/*! es6-object-assign/auto */ "./node_modules/es6-object-assign/auto.js");
+
+__webpack_require__(/*! core-js/fn/array/includes */ "./node_modules/core-js/fn/array/includes.js");
+
+__webpack_require__(/*! intl */ "./node_modules/intl/index.js");
 
 var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
@@ -108,7 +113,27 @@ document.body.appendChild(appTarget);
 _gui2.default.setAppElement(appTarget);
 var WrappedGui = (0, _hashParserHoc2.default)((0, _appStateHoc2.default)(_gui2.default));
 
-_reactDom2.default.render(_react2.default.createElement(WrappedGui, null), appTarget);
+// TODO a hack for testing the backpack, allow backpack host to be set by url param
+var backpackHostMatches = window.location.href.match(/[?&]backpack_host=([^&]*)&?/);
+var backpackHost = backpackHostMatches ? backpackHostMatches[1] : null;
+
+var backpackOptions = {
+    visible: true,
+    host: backpackHost
+};
+
+_reactDom2.default.render(_react2.default.createElement(WrappedGui, { backpackOptions: backpackOptions }), appTarget);
+
+/***/ }),
+
+/***/ 1:
+/*!*******************************************!*\
+  !*** ./locale-data/complete.js (ignored) ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
 
 /***/ })
 
