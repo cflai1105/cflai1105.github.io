@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<form name="form" id="form">
+  IP：
+  <input type="text" name="name" id="name" /> 
+  <!--
+   E-mail：
+  <input type="text" name="email" id="email" />
+	-->
+  <input type="button" name="submit" value="送出" onclick="processFormData();" />
+  <!--<input type="button" name="submit" value="送出" onclick="window.open('https://zenboscratch.github.io/');" />	-->
+</form>	
+	
+	
+	
+<script>
+function processFormData() {
+  //getElementById --- from input
+  /*
+  var name_element = document.getElementById('name');
+  var name = name_element.value;
+  var email_element = document.getElementById('email');
+  var email = email_element.value;
+  var form_element = document.getElementById('subscribe_id');
+  */
+
+  //getElementById --- from form
+  /*
+  var form_element = document.getElementById('form');
+  var name = form_element[0].value;
+  var email = form_element[1].value;
+  */
+
+  //getElementsByTagName
+  /*
+  var input_element = document.getElementsByTagName('input');
+  var name = input_element[0].value;
+  var email = input_element[1].value;
+  */
+
+  //getElementsName
+  /*
+  var name_element = document.getElementsByName('name');
+  var name = name_element[0].value;
+  var email_element = document.getElementsByName('email');
+  var email = email_element[0].value;
+  */
+  
+  //get form element
+  
+  //取得name屬性為form的表單
+  var oform = document.forms['form'];
+  /*
+  //取elements集合中name屬性為name的值
+  var name = oform.elements.name.value;
+  //取elements集合中name屬性為email的值
+  var email = oform.elements.email.value;
+  */
+  var name = oform.elements['name'].value;
+	
+  //var email = oform.elements['email'].value;
+  //alert('你的姓名是' + name + '\n電子郵件是' + email);
+
+  var url = 'https://';
+  url = url + name;
+  url = url + ':8080';
+  url = url + '/checkssl/';
+
+  
+  window.open(url);
+	
+}
+</script>
+</body>
+</html>
