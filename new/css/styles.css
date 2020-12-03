@@ -81,7 +81,11 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  /*margin-bottom: 0.5rem;*/
+  /*ADD*/
+  font-family: MyriadPro, "Segoe UI", 微軟正黑體, "Microsoft JhengHei", Arial, 新細明體;
+
+  /*DEBUG*/
 }
 
 p {
@@ -360,18 +364,32 @@ template {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /*margin-bottom: 0.5rem;*/
+  /*font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+  font-family: MyriadPro, "Segoe UI", 微軟正黑體, "Microsoft JhengHei", Arial, 新細明體;
   font-weight: 700;
-  line-height: 1.2;
+  /*line-height: 0.2;*/
+  line-height: -0.1;
+	/*DEBUG*/
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  /*font-size: 2.5rem;*/
+	font-size: 5.0rem;
+	  
+  /*ADD*/ 
+  font-weight: 400;
+  
+  /*DEBUG*/
 }
 
 h2, .h2 {
   font-size: 2rem;
+	
+  /*ADD*/ 
+  font-weight: 400;
+	
+  /*DEBUG*/
 }
 
 h3, .h3 {
@@ -1300,7 +1318,7 @@ pre code {
 
   .col-lg-6 {
     flex: 0 0 50%;
-    max-width: 50%;
+    max-width: 53%;
   }
 
   .col-lg-7 {
@@ -3926,6 +3944,7 @@ input[type=button].btn-block {
 .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #fed136;
+
 }
 
 .nav-fill > .nav-link,
@@ -3976,6 +3995,16 @@ input[type=button].btn-block {
   line-height: inherit;
   white-space: nowrap;
 }
+.navbar-brand-text {
+  /*ADD*/
+	
+  font-family: MyriadPro, "Segoe UI", 微軟正黑體, "Microsoft JhengHei", Arial, 新細明體;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 75px;
+  /*DEBUG*/
+}
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
 }
@@ -3986,6 +4015,9 @@ input[type=button].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+	
+  /*ADD*/
+  font-family: MyriadPro, "Segoe UI", 微軟正黑體, "Microsoft JhengHei", Arial, 新細明體;
 }
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -6133,7 +6165,9 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  /*background-color: #f8f9fa !important;*/
+	
+  /*DEBUG*/
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -9986,12 +10020,23 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  /*padding: 6rem 0;*/
+	padding: 3rem 0;
+	
+  /*DEBUG*/
 }
 .page-section h2.section-heading {
-  font-size: 2.5rem;
+  /*font-size: 2.5rem;*/
   margin-top: 0;
   margin-bottom: 1rem;
+	
+  /*ADD*/
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 66px;
+  color: #000000;
+  font-style: normal;
+  font-family: MyriadPro, "Segoe UI", 微軟正黑體, "Microsoft JhengHei", Arial, 新細明體;
 }
 .page-section h3.section-subheading {
   font-size: 1rem;
@@ -10115,15 +10160,23 @@ img::-moz-selection {
   }
 }
 header.masthead {
+  /*
+  margin-top: 10rem;
   padding-top: 10.5rem;
   padding-bottom: 6rem;
+  */
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  /*background-image: url("../assets/img/header-bg.jpg");*/
+  background-image: url("../assets/img/header-bg.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+	
+	
+	
+  /*DEBUG*/
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -10187,15 +10240,34 @@ header.masthead .masthead-heading {
   opacity: 1;
 }
 #portfolio .portfolio-item .portfolio-caption {
-  padding: 1.5rem;
+  /* padding: 1.5rem;*/
   text-align: center;
   background-color: #fff;
+
+  /*DEBUG*/
+}
+/*ADD*/
+#portfolio .portfolio-item .portfolio-caption-stepheading {
+  font-family: MyriadPro, "Segoe UI", 微軟正黑體, "Microsoft JhengHei", Arial, 新細明體;
+  text-align: center;
+  background-color: #fff;
+  font-size: 28px;
+  /*DEBUG*/
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-  font-size: 1.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  /*font-size: 1.5rem;*/
+  font-size: 18px;
+  /*font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+  font-family: MyriadPro, "Segoe UI", 微軟正黑體, "Microsoft JhengHei", Arial, 新細明體;
+  /*font-weight: 700;*/
+  font-weight: 400;
   margin-bottom: 0;
+	
+  /*ADD*/
+  line-height: 29px;
+  color: #898989
+	  
+  /*DEBUG*/
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-style: italic;
@@ -10482,3 +10554,54 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+/*add*/
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+
+  cursor: pointer;
+	
+	border-radius: 35px;
+	font-family: MyriadPro, "Segoe UI", 微軟正黑體, "Microsoft JhengHei", Arial, 新細明體;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px;
+
+	
+	min-width:250px;
+	height: auto;
+}
+
+.button-blue {
+  background-color: white; 
+  color: #008CBA; 
+  border: 2px solid #008CBA;
+	border-radius: 35px;
+	font-family: MyriadPro, "Segoe UI", 微軟正黑體, "Microsoft JhengHei", Arial, 新細明體;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px;
+	transition: all 0.8s
+}
+
+.button-blue:hover {
+	background-image: linear-gradient(to right, #00d2ff 0%, #51a9ec 51%, #51a9ec 100%);
+	background-position: right center;
+  background-color: #008CBA;
+  color: white;
+  transition: 0.4s;
+}
+
+
+
+         
