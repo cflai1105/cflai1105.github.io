@@ -10187,9 +10187,7 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-	
-	
-	
+
   /*DEBUG*/
 }
 header.masthead .masthead-subheading {
@@ -10234,6 +10232,14 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
+
+/*ADD*/
+@media (min-width: 1600px) {
+  header.masthead {
+  	min-height: 60vh;
+  }
+}
+
 
 @media (min-width: 10px) {
   header.masthead {
@@ -10656,11 +10662,11 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 /* Remove button outline*/
-button:active {
-outline: none;
-border: none;
+button-blue:active {
+	outline: none;
+	border: none;
 }
 
-button:focus {outline:0;}
+button-blue:focus {outline:0;}
 
          
