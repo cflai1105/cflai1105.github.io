@@ -10240,6 +10240,19 @@ header.masthead .masthead-heading {
   }
 }
 
+/*ADD*/
+@media (min-width: 2400px) {
+  header.masthead {
+  	min-height: 80vh;
+  }
+}
+
+/*ADD*/
+@media (min-width: 3000px) {
+  header.masthead {
+  	min-height: 100vh;
+  }
+}
 
 @media (min-width: 10px) {
   header.masthead {
