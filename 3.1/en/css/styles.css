@@ -366,7 +366,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   /*margin-bottom: 0.5rem;*/
   /*font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
-  font-family: "Segoe UI", 微軟正黑體, "Microsoft JhengHei", sans-serif, Arial, 新細明體;
+  font-family: "Segoe UI", 微軟正黑體, "Microsoft JhengHei", sans-serif, 新細明體;
   font-weight: 700;
   /*line-height: 0.2;*/
   line-height: -0.1;
@@ -388,7 +388,7 @@ h2, .h2 {
   
   /*ADD*/ 
   font-weight: 400;
-  font-family: "Segoe UI", 微軟正黑體, "Microsoft JhengHei", sans-serif, Arial, 新細明體;
+  font-family: "Segoe UI", 微軟正黑體, "Microsoft JhengHei", sans-serif, 新細明體;
   /*DEBUG*/
 }
 
