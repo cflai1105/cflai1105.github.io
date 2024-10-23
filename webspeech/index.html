@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Speech API 測試</title>
+</head>
+<body>
+
+    <h1>Web Speech API 測試</h1>
+
+    <label for="textInput">輸入你想讓系統唸出的文字：</label>
+    <input type="text" id="textInput" placeholder="輸入文字...">
+    <button onclick="speakText()">播放語音</button>
+
+    <script>
+        function speakText() {
+            // 取得輸入框中的文字
+            var text = document.getElementById("textInput").value;
+
+            // 檢查瀏覽器是否支援 Web Speech API
+            if ('speechSynthesis' in window) {
+                var msg = new SpeechSynthesisUtterance();
+                msg.text = text;  // 設定要唸出的文字
+                msg.lang = 'zh-TW';  // 設定語言為中文（繁體）
+                window.speechSynthesis.speak(msg);  // 語音播放
+            } else {
+                alert("你的瀏覽器不支援 Web Speech API");
+            }
+        }
+    </script>
+
+</body>
+</html>
